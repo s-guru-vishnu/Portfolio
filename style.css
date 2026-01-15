@@ -15,6 +15,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 body {
@@ -142,6 +143,16 @@ code,
     content: '>';
     color: #569cd6;
     margin-right: 0.5rem;
+}
+
+.brand-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.brand-link:hover h2 {
+    color: #ffffff;
 }
 
 .nav-menu {
@@ -658,16 +669,19 @@ code,
     }
 
     .navbar .container {
-        flex-direction: row; /* Align logo and burger horizontally */
+        flex-direction: row;
+        /* Align logo and burger horizontally */
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap; /* Allow menu to break to next line */
+        flex-wrap: wrap;
+        /* Allow menu to break to next line */
     }
 
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 60px; /* Adjust based on navbar height */
+        top: 60px;
+        /* Adjust based on navbar height */
         gap: 0;
         flex-direction: column;
         background-color: #252526;
