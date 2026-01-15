@@ -619,19 +619,76 @@ code,
     margin-bottom: 0;
 }
 
+/* ========== HAMBURGER MENU ========== */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
+    z-index: 1100;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #d4d4d4;
+}
+
 /* ========== RESPONSIVE DESIGN ========== */
 @media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
     .navbar .container {
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: row; /* Align logo and burger horizontally */
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap; /* Allow menu to break to next line */
     }
 
     .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 60px; /* Adjust based on navbar height */
+        gap: 0;
         flex-direction: column;
-        gap: 0.5rem;
+        background-color: #252526;
         width: 100%;
         text-align: center;
+        transition: 0.3s;
+        border-bottom: 1px solid #3e3e42;
+        padding-bottom: 2rem;
     }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 1rem 0;
+        margin: 0 2rem;
+        border-bottom: 1px solid #2d2d30;
+    }
+
 
     .hero-title {
         font-size: 2rem;
