@@ -1,12 +1,5 @@
-/* ========================================
-   CODE EDITOR INSPIRED PORTFOLIO
-   Documentation & Terminal Aesthetic
-   ======================================== */
-
-/* ========== GOOGLE FONTS ========== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
-/* ========== CSS RESET & BASE ========== */
 * {
     margin: 0;
     padding: 0;
@@ -26,8 +19,8 @@ body {
     font-size: 16px;
 }
 
-/* ========== TYPOGRAPHY ========== */
-h1,
+code,
+.code {
 h2,
 h3,
 h4,
@@ -81,7 +74,6 @@ code,
     color: #ce9178;
 }
 
-/* ========== LAYOUT CONTAINERS ========== */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -115,7 +107,6 @@ code,
     font-family: 'JetBrains Mono', monospace;
 }
 
-/* ========== NAVIGATION ========== */
 .navbar {
     background-color: #252526;
     border-bottom: 1px solid #3e3e42;
@@ -174,7 +165,6 @@ code,
     border-bottom-color: #569cd6;
 }
 
-/* ========== HERO SECTION ========== */
 #hero {
     padding: 5rem 0;
     background-color: #252526;
@@ -264,7 +254,6 @@ code,
     color: #ffffff;
 }
 
-/* ========== CONTENT BLOCKS ========== */
 .content-block {
     background-color: #252526;
     padding: 2rem;
@@ -283,7 +272,6 @@ code,
     margin-bottom: 0;
 }
 
-/* ========== EXPERIENCE SECTION ========== */
 .experience-item {
     margin-bottom: 3rem;
     padding: 2rem;
@@ -362,7 +350,6 @@ code,
     color: #569cd6;
 }
 
-/* ========== SKILLS SECTION ========== */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -407,7 +394,6 @@ code,
     margin-right: 0.5rem;
 }
 
-/* ========== PROJECTS SECTION ========== */
 .project-item {
     margin-bottom: 2rem;
     padding: 2rem;
@@ -488,7 +474,6 @@ code,
     color: #ffffff;
 }
 
-/* ========== EDUCATION SECTION ========== */
 .education-item {
     margin-bottom: 3rem;
     padding: 2rem;
@@ -581,7 +566,6 @@ code,
     /* Push to bottom if height varies */
 }
 
-/* ========== CONTACT SECTION ========== */
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -611,7 +595,6 @@ code,
     font-family: 'JetBrains Mono', monospace;
 }
 
-/* ========== FOOTER ========== */
 .footer {
     background-color: #252526;
     border-top: 1px solid #3e3e42;
@@ -630,7 +613,6 @@ code,
     margin-bottom: 0;
 }
 
-/* ========== HAMBURGER MENU ========== */
 .hamburger {
     display: none;
     cursor: pointer;
