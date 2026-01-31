@@ -224,17 +224,9 @@ code,
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-    padding-left: 2rem;
 }
 
-.hero-links::after {
-    content: '};';
-    color: #d4d4d4;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 1.5rem;
-    position: absolute;
-    margin-top: 3rem;
-}
+
 
 .link-button {
     padding: 0.75rem 1.5rem;
