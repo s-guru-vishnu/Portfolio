@@ -55,39 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('%cconst skills = ["MongoDB", "Express.js", "React.js", "Node.js"];', 'color: #9cdcfe; font-family: JetBrains Mono, monospace;');
     console.log('%cconsole.log("Thanks for checking out my portfolio!");', 'color: #dcdcaa; font-family: JetBrains Mono, monospace;');
 
-    const modal = document.getElementById("achievement-modal");
-    const closeBtn = document.querySelector(".close-button");
-    const modalTitle = document.getElementById("modal-title");
-    const modalCompany = document.getElementById("modal-company");
-    const modalBody = document.getElementById("modal-body");
 
-    document.querySelectorAll(".view-details-btn").forEach(btn => {
-        btn.addEventListener("click", function (e) {
-            e.preventDefault();
-            const item = this.closest(".experience-item");
-            const title = item.querySelector(".job-title").textContent;
-            const company = item.querySelector(".company-name").textContent;
-            const details = item.querySelector(".responsibilities-list").innerHTML;
-
-            modalTitle.textContent = title;
-            modalCompany.textContent = company;
-            modalBody.innerHTML = `<ul>${details}</ul>`;
-
-            modal.style.display = "block";
-        });
-    });
-
-    if (closeBtn) {
-        closeBtn.addEventListener("click", function () {
-            modal.style.display = "none";
-        });
-    }
-
-    window.addEventListener("click", function (e) {
-        if (e.target == modal) {
-            modal.style.display = "none";
-        }
-    });
 
 
 
